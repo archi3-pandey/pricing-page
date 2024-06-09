@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Pricing Page</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h2>Pricing Plan</h2>  
+  <div class="carousel">
+    <div class="carousel-item">
+        <div class="carousel-caption">
+            <div class="deal">
+                <h5>Free</h5>
+                <h3>$0/Month</h3>
+            </div>
+            <ul>
+                <li>50 GB Storage</li>
+                <li>100 Users</li>
+                <li>24/7 Support</li>
+                <li>Custom Branding</li>
+                <li>Dedicated Manager</li>
+            </ul>
+            <a href="#" class="btn">Sign Up</a>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-caption">
+            <div class="deal">
+                <h5>Basic</h5>
+                <h3>$19.99/Month</h3>
+            </div>
+            <ul>
+                <li>50 GB Storage</li>
+                <li>100 Users</li>
+                <li>24/7 Support</li>
+                <li>Custom Branding</li>
+                <li>Dedicated Manager</li>
+            </ul>
+            <a href="#" class="btn">Sign Up</a>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-caption">
+            <div class="deal">
+                <h5>Standard</h5>
+                <h3>$19.99/Month</h3>
+            </div>
+            <ul>
+                <li>50 GB Storage</li>
+                <li>100 Users</li>
+                <li>24/7 Support</li>
+                <li>Custom Branding</li>
+                <li>Dedicated Manager</li>
+            </ul>
+            <a href="#" class="btn">Sign Up</a>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-caption">
+            <div class="deal">
+                <h5>Premium</h5>
+                <h3>$29.99/Month</h3>
+            </div>
+            <ul>
+                <li>50 GB Storage</li>
+                <li>100 Users</li>
+                <li>24/7 Support</li>
+                <li>Custom Branding</li>
+                <li>Dedicated Manager</li>
+            </ul>
+            <a href="#" class="btn">Sign Up</a>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-caption">
+            <div class="deal">
+                <h5>Ultra</h5>
+                <h3>$39.99/Month</h3>
+            </div>
+            <ul>
+                <li>50 GB Storage</li>
+                <li>100 Users</li>
+                <li>24/7 Support</li>
+                <li>Custom Branding</li>
+                <li>Dedicated Manager</li>
+            </ul>
+            <a href="#" class="btn">Sign Up</a>
+        </div>
+    </div>
+  </div>
+      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.carousel').carousel({
+           padding:200
+
+        });
+        autoplay();
+        function autoplay(){
+            $('.carousel').carousel('next');
+            setTimeout(autoplay,4500);
+        }
+      });
+ </script>
+
+</body>
+</html>
